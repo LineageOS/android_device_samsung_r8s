@@ -4,6 +4,11 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <!-- List of ID of auxiliary cameras that must be ignored by the app. -->
+    <string-array name="config_ignoredAuxCameraIds">
+        <item>3</item>
+    </string-array>
+
     <!-- An array of triplets made of (camera ID, qualities, framerates).
          These video modes will be added to the available
          quality/framerate combinations of a camera device.
