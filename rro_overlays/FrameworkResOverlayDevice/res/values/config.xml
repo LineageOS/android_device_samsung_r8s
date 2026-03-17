@@ -57,6 +57,52 @@
         <item>40000</item>
     </integer-array>
 
+    <!-- Array of desired screen brightness in nits corresponding to the lux values
+         in the config_autoBrightnessLevels array. The display brightness is defined as the measured
+         brightness of an all-white image.
+
+         If this is defined then:
+            - config_autoBrightnessLcdBacklightValues should not be defined
+            - config_screenBrightnessNits must be defined
+            - config_screenBrightnessBacklight must be defined
+
+         This array should have size one greater than the size of the config_autoBrightnessLevels
+         array. The brightness values must be non-negative and non-decreasing. This must be
+         overridden in platform specific overlays -->
+    <array name="config_autoBrightnessDisplayValuesNits">
+        <item>12</item>
+        <item>17</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>62</item>
+        <item>85</item>
+        <item>108</item>
+        <item>119</item>
+        <item>119</item>
+        <item>119</item>
+        <item>123</item>
+        <item>123</item>
+        <item>126</item>
+        <item>134</item>
+        <item>152</item>
+        <item>178</item>
+        <item>249</item>
+        <item>420</item>
+        <item>420</item>
+        <item>468</item>
+        <item>515</item>
+        <item>563</item>
+        <item>610</item>
+        <item>658</item>
+        <item>705</item>
+        <item>753</item>
+        <item>776</item>
+        <item>800</item>
+        <item>800</item>
+    </array>
+
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
 
