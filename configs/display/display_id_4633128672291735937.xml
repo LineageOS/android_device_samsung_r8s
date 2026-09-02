@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<displayConfiguration>
+    <densityMapping>
+        <density>
+            <height>1080</height>
+            <width>2400</width>
+            <density>420</density>
+        </density>
+    </densityMapping>
+    <screenBrightnessMap>
+        <point>
+            <value>0.0</value>
+            <nits>2</nits>
+        </point>
+        <point>
+            <value>0.0082</value>
+            <nits>4.4</nits>
+        </point>
+        <point>
+            <value>0.0185</value>
+            <nits>6.9</nits>
+        </point>
+        <point>
+            <value>0.0247</value>
+            <nits>10.3</nits>
+        </point>
+        <point>
+            <value>0.0658</value>
+            <nits>30.6</nits>
+        </point>
+        <point>
+            <value>0.2016</value>
+            <nits>124.7</nits>
+        </point>
+        <point>
+            <value>0.3457</value>
+            <nits>249.4</nits>
+        </point>
+        <point>
+            <value>0.4733</value>
+            <nits>372</nits>
+        </point>
+        <point>
+            <value>0.5103</value>
+            <nits>407.5</nits>
+        </point>
+        <point>
+            <value>0.5185</value>
+            <nits>415.2</nits>
+        </point>
+        <point>
+            <value>0.5247</value>
+            <nits>420</nits> <!-- Maximum non-HBM brightness nits -->
+        </point>
+        <point>
+            <value>0.5267</value>
+            <nits>444.7</nits>
+        </point>
+        <point>
+            <value>0.5329</value>
+            <nits>449.3</nits>
+        </point>
+        <point>
+            <value>0.5494</value>
+            <nits>461.5</nits>
+        </point>
+        <point>
+            <value>1.0</value>
+            <nits>800</nits>
+        </point>
+    </screenBrightnessMap>
+    <highBrightnessMode enabled="true">
+        <transitionPoint>0.5247</transitionPoint>
+        <minimumLux>3000</minimumLux>
+        <timing>
+            <timeWindowSecs>0</timeWindowSecs> // Window in which we restrict HBM.
+            <timeMaxSecs>0</timeMaxSecs>        // Maximum time of HBM allowed in that window.
+            <timeMinSecs>0</timeMinSecs>         // Minimum time remaining required to switch
+        </timing>                                 //   HBM on for.
+    </highBrightnessMode>
+
+    <autoBrightness enabled="true">
+        <brighteningLightDebounceMillis>4000</brighteningLightDebounceMillis>
+        <darkeningLightDebounceMillis>8000</darkeningLightDebounceMillis>
+        <brighteningLightDebounceIdleMillis>4000</brighteningLightDebounceIdleMillis>
+        <darkeningLightDebounceIdleMillis>8000</darkeningLightDebounceIdleMillis>
+    </autoBrightness>
+
+    <hdrBrightnessConfig>
+        <brightnessMap>
+        </brightnessMap>
+        <brightnessIncreaseDebounceMillis>0</brightnessIncreaseDebounceMillis>
+        <screenBrightnessRampIncrease>-1.0</screenBrightnessRampIncrease>
+        <brightnessDecreaseDebounceMillis>0</brightnessDecreaseDebounceMillis>
+        <screenBrightnessRampDecrease>-1.0</screenBrightnessRampDecrease>
+    </hdrBrightnessConfig>
+    <lightSensor>
+        <type>com.samsung.sensor.physical_light</type>
+        <name>STK31610 Light</name>
+    </lightSensor>
+</displayConfiguration>
