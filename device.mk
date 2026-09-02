@@ -33,6 +33,10 @@ TARGET_SCREEN_WIDTH := 1080
 # Camera
 $(call soong_config_set,samsungCameraVars,extra_ids,50) # ID=50 is telephoto
 
+# Density mapping config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display/display_id_4633128672291735937.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4633128672291735937.xml
+
 # NFC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf
