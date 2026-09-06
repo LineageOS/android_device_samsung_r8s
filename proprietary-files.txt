@@ -15,6 +15,9 @@ vendor/firmware/APTV_AUDIO_SLSI.bin
 vendor/firmware/AP_AUDIO_SLSI.bin
 vendor/firmware/SoundBoosterParam.bin
 
+# Audio (SoundBooster)
+vendor/etc/SoundBoosterParam.txt
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
