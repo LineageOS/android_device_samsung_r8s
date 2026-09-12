@@ -37,6 +37,8 @@ $(call soong_config_set,samsungCameraVars,extra_ids,50) # ID=50 is telephoto
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf
 
+$(call inherit-product, device/samsung/universal9830-common/sec-nfc.mk)
+
 # Overlays 
 PRODUCT_PACKAGES += \
     ApertureOverlayDevice \
