@@ -33,6 +33,9 @@ TARGET_SCREEN_WIDTH := 1080
 # Camera
 $(call soong_config_set,samsungCameraVars,extra_ids,50) # ID=50 is telephoto
 
+# Inherit from SEC NFC
+$(call inherit-product, device/samsung/universal9830-common/sec-nfc.mk)
+
 # NFC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf
