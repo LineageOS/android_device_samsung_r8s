@@ -1,11 +1,8 @@
 # All unpinned blobs are from G780FXXSOFYJ1
 # Vendor security patch level 2025-10-01
 
-# Audio
+# Audio (Dolby Atmos)
 vendor/etc/dolby/dax-default.xml
-vendor/etc/floating_feature.xml
-vendor/lib/lib_SamsungRec_07020.so
-vendor/lib/soundfx/libswdap.so
 vendor/lib64/soundfx/libswdap.so
 
 # Audio (Firmware)
@@ -22,12 +19,9 @@ vendor/etc/SoundBoosterParam.txt
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
-vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
-vendor/lib/vendor.samsung.hardware.bluetooth@2.0.so
 
 # Camera
 vendor/lib64/hw/camera.exynos990.so
