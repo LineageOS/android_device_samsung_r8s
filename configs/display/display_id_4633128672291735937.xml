@@ -82,10 +82,10 @@
     </highBrightnessMode>
 
     <autoBrightness enabled="true">
-        <brighteningLightDebounceMillis>4000</brighteningLightDebounceMillis>
-        <darkeningLightDebounceMillis>8000</darkeningLightDebounceMillis>
-        <brighteningLightDebounceIdleMillis>4000</brighteningLightDebounceIdleMillis>
-        <darkeningLightDebounceIdleMillis>8000</darkeningLightDebounceIdleMillis>
+        <brighteningLightDebounceMillis>1000</brighteningLightDebounceMillis>
+        <darkeningLightDebounceMillis>2000</darkeningLightDebounceMillis>
+        <brighteningLightDebounceIdleMillis>-1</brighteningLightDebounceIdleMillis>
+        <darkeningLightDebounceIdleMillis>-1</darkeningLightDebounceIdleMillis>
     </autoBrightness>
 
     <hdrBrightnessConfig>
